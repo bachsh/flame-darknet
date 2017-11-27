@@ -15,7 +15,7 @@ def parse(data):
 			username = post.find('a', class_='username-coloured')    
 		item['post_author'] = username.get_text()
 		###        
-		item['post_content'] = post.find('div', class_='entry-content').find('p').get_text()
+		item['post_content'] = post.find('div', class_='entry-content').get_text()
 		###
 		item['url'] = data['url']
 		###

@@ -11,5 +11,5 @@ class Post(Base):
     url = Column(String)
     flag = Column(Integer, default=-1)
     def __repr__(self):
-        return "<Post(topic_content='%s', post_content='%s', post_authar='%s', url='%s')>" % (self.topic_content, self.post_content, self.post_authar, self.url)
+        return "<Post(topic_content='%s', post_content='%s', post_author='%s', url='%s')>" % (self.topic_content, self.post_content, self.post_author, self.url)
 
